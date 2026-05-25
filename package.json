@@ -1,0 +1,13 @@
+{
+  "name": "bulk-offer-dispatcher",
+  "private": true,
+  "scripts": {
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "npm --prefix backend start",
+    "local": "npx concurrently \"npm run backend\" \"npm run frontend\" --names \"BACKEND,FRONTEND\" --prefix \"{name}\"",
+    "help": "echo Run frontend and backend separately: npm run frontend && npm run backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
